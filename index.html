@@ -52,10 +52,13 @@
               id="radio-done"
               value="done"
               class="radio-button"
+              v-model="allTodos"
             />
             <label for="radio-done">Done</label>
           </div>
-          <button class="button" id="delete-button">Remove Done Todos</button>
+          <button class="button" id="delete-button" @click="deleteTodos">
+            Remove Done Todos
+          </button>
         </section>
 
         <section class="todos">
